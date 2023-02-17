@@ -1,16 +1,16 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a routerLink="/" class="navbar-brand">Recipe Book</a>
+      <img src="../../assets/favicon-image.png" class="logo">
+      <a routerLink="/" class="navbar-brand">RECIPE BOOK</a>
     </div>
-
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse navbar-right">
       <ul class="nav navbar-nav">
         <li routerLinkActive="active" *ngIf="isAuthenticated">
           <a routerLink="/recipes">Recipes</a>
         </li>
         <li routerLinkActive="active" *ngIf="!isAuthenticated">
-          <a routerLink="/auth">Authenticate</a>
+          <a routerLink="/auth">Login</a>
         </li>
         <li routerLinkActive="active">
           <a routerLink="/shopping-list">Shopping List</a>
@@ -35,5 +35,6 @@
         </li>
       </ul>
     </div>
+
   </div>
 </nav>

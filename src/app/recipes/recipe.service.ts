@@ -4,6 +4,7 @@ import { Subject } from 'rxjs';
 import { Recipe } from './recipe.model';
 import { Ingredient } from '../shared/ingredient.model';
 import { ShoppingListService } from '../shopping-list/shopping-list.service';
+import { RecipesModule } from './recipes.module';
 
 @Injectable()
 export class RecipeService {
@@ -32,6 +33,7 @@ export class RecipeService {
     this.recipesChanged.next(this.recipes.slice());
   }
 
+
   getRecipes() {
     return this.recipes.slice();
   }
@@ -58,4 +60,7 @@ export class RecipeService {
     this.recipes.splice(index, 1);
     this.recipesChanged.next(this.recipes.slice());
   }
+
+
 }
+

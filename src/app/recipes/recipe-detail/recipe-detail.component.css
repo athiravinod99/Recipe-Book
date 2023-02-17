@@ -1,0 +1,19 @@
+h1{
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+    margin: 5px 0px !important; 
+    background-color: rgb(135, 222, 215);
+    color: black !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.col-xs-12{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px 0px;
+}
