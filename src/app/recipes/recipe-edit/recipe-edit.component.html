@@ -18,6 +18,20 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="form-group">
+            <label for="type">Type</label><br>
+            <select name="type" formControlName="type" class="form-control">
+              <option selected="selected" value="one">Select</option>
+              <option value="two">Side dish </option>
+              <option value="three">Snack </option>
+              <option value="four">Dessert</option>
+              <option value="five">Main Course</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
             <label for="category">Category</label><br>
             <input id="veg" type="radio" class="veg" value="veg" name="category" formControlName="category">
             <label for="veg">Veg</label><br>

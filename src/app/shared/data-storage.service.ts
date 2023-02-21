@@ -25,7 +25,7 @@ export class DataStorageService {
   }
 
   fetchRecipes() {
-    return this.http.get<Recipe[]>(this.url,)
+    return this.http.get<Recipe[]>(this.url)
       .pipe(
         map(recipes => {
           return recipes.map(recipe => {
@@ -40,10 +40,6 @@ export class DataStorageService {
         })
       );
   }
-
-  // fetchRecipeType() {
-  //   return this.http.get<Recipe[]>('https://angular-b5b24-default-rtdb.firebaseio.com/recipes.json' + '/category');
-  // }
 }
 
 
